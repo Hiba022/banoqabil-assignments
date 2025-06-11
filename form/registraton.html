@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <h3>Registration form</h3>
+    <form id="registration-form">
+    <label>Username:</label> <br> <input type="text" id="Username">
+    <br><br>
+    <label>Email:</label> <br><input type="Email" id="Email" >
+    <br><br>
+    <label>Password:</label><br> <input type="password" id="password" >
+    <br><br>
+    <label>Confirm Password:</label> <br> <input type="password" id="Confirm_password">
+    <br><br>
+    <button type="submit">Submit</button>
+
+    <p id="error"></p>
+</form>
+</body>
+</html>
+<script src="localstorage.js"></script>
+<script>
+  function saveuserdata(Email, password){
+            localStorage.setItem("Email", Email);
+            localStorage.setItem("password", password);
+        }
+
+document.getElementById('registration-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const Username = document.getElementById('Username').value.trim();
+    const Email = document.getElementById('Email').value;
+    const password = document.getElementById('password').value;
+    const Confirm_password = document.getElementById('Confirm_password').value;
+    const error = document.getElementById('error');
+    error.textContent='';
+
+    const passwordregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$?*&%])[A-Za-z\d!@#$?*&%]{8,}$/;
+
+    if(Username.length < 3){
+        error.textContent="username must be atleast 3 characters long.";
+        return;
+    } else if(!passwordregex.test(password)){
+        error.textContent = "password must be atleast 8 characters, include uppercase, lowercase, number, special character"
+                return;}
+     else if(password!=Confirm_password){
+        error.textContent ="passwords do not match."
+                return;
+    }
+    saveuserdata(Email, password);
+    alert("registration successful");
+    window.location.href = "/form/login.html";
+})
+</script>

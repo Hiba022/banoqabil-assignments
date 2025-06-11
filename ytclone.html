@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+       *{
+        font-size: 21px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            padding-left: 20px;
+            border-radius: 25px;
+        }
+        .center{
+            padding: 15px;
+            align-items: baseline;
+            justify-content: center;
+            margin: 0 auto;
+            height: 30px;
+        }
+        .center input{
+            width: 700px;
+        }
+        .right-items{
+            align-items: baseline;
+        }
+        .right-items button{
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+            gap: 15px;
+        }
+        .bar{
+            height: 30px;
+            width: 30px;
+
+        }
+        .sidebar{
+            height: 100%;
+            width: 300px;
+            background-color: rgb(221, 219, 219);
+            position: fixed;
+            border-right: 1px solid;
+            overflow: auto;
+        }
+        .sidebar ul{
+            list-style: none;
+        }
+        .sidebar ul li{
+            padding: 15px 20px;
+
+        }
+        .video-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 25px 90px;
+}
+
+.video-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 300px;
+    height: 200px;
+    width: 360px;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eaeaea;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.video-card p {
+    color: #555;
+    font-size: 14px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="images/bars-solid.svg" alt="bar" class="bar">
+
+        <div class="logo">
+            <img src="images/Screenshot 2025-04-15 225106.png" alt="logo" height="25px">
+        </div>
+        <div class="center">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit">
+            <i class="fa fa-search"></i></button>
+        </div>
+        <div class="right-items"> 
+            <button>+ create</button>
+            <button>sign in</button>
+        </div>            
+    </div>
+    <div class="sidebar">
+       <ul>
+        <b><li>Home</li></b>
+        <li>Shorts</li>
+        <li>Subscriptions</li>
+        <hr>
+        <b><li>You</li></b>
+        <li>Playlists</li>
+        <li>Your videos</li>
+        <li>Watch later</li>
+        <li>Liked videos</li>
+        <hr>
+        <b><li>Explore</li></b>
+        <li>Trending</li>
+        <li>Music</li>
+        <li>Gaming</li>
+        <li>News</li>
+        <li>Sports</li>
+        <hr>
+       <b><li>More From YouTube</li></b>
+        <li>YouTube Premium</li>
+        <li>YouTube Studio</li>
+        <li>YouTube Music</li>
+        <li>YouTube Kids</li>
+        <li>Settings</li>
+        <li>Report History</li>
+        <li>Help</li>
+       </ul>       
+    </div>
+    
+    <div class="video-section">
+        <div class="videos-container">
+            <div class="video-card">
+                <!-- <img src="images/video1.jpg" alt="Video Thumbnail"> -->
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+            <div class="video-card">
+                <img src="images/goldchain.jpg" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git hub</title>
+    <style>
+      .container{
+        display: flex;
+      }
+      .nav{
+        display: flex;
+        align-items: baseline;
+      }
+      .left{
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+      .right{
+        margin-left: 60%;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+      .right input{
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .left-bar{
+        height: 100vh;
+        width: 300px;
+        border-right: 1px solid;
+        padding: 15px;
+        padding-top: 5px;
+        margin: 5px;
+      }
+      .left-bar input{
+        padding: 10px;
+        border-radius: 5px;
+        width: 40vb;
+      }
+      .left-bar li{
+        list-style: none;
+        
+      }
+      .main{
+        margin: 5px;
+        gap: 20px;
+      }
+      .main input{
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 90vb;
+      }
+      .main button{
+        padding: 10px;
+        border-radius: 20px;
+        
+      }
+      .first-boxes{
+        display: flex;
+        gap: 20px;
+      }
+      .block1{
+        margin-top: 25px;
+        border: 1px solid black;
+        width: 290px;
+        height: 150px;
+        border-radius: 5px;
+        padding: 10px;           /* Adds spacing inside the box */
+        box-sizing: border-box;  /* Keeps the box size consistent */
+        text-align: left;        /* Ensures text aligns left */
+      } 
+      .block1 a{
+        text-decoration: none;
+        color: inherit;
+      }
+      .second-boxes{
+        display: flex;
+        gap: 20px;
+      }
+      .block2{
+        margin-top: 25px;
+        border: 1px solid black;
+        width: 290px;
+        height: 150px;
+        border-radius: 5px;
+        padding: 10px;           /* Adds spacing inside the box */
+        box-sizing: border-box;  /* Keeps the box size consistent */
+        text-align: left;        /* Ensures text aligns left */
+      }
+      .block2  a{
+        text-decoration: none;
+        color: inherit;
+      }
+      .right-bar{
+        margin-top: 25px;
+        margin-left: 15px;
+        border: 1px solid black;
+        width: 290px;
+        height: 150%;
+        border-radius: 5px;
+        padding: 10px;           /* Adds spacing inside the box */
+        box-sizing: border-box;  /* Keeps the box size consistent */
+        text-align: left;        /* Ensures text aligns left */
+      }
+    </style>
+</head>
+<body>
+  
+    <div class="nav">
+        <div class="left">
+            <svg id="bar" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+              </svg>
+              <svg id="logo" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+              </svg>
+              <h4>Dashboard</h4>              
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Type \ to search">
+            <button><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M3 6a3 3 0 1 1 4 2.83v6.34a3.001 3.001 0 1 1-2 0V8.83A3.001 3.001 0 0 1 3 6Zm11.207-2.707a1 1 0 0 1 0 1.414L13.914 5H15a4 4 0 0 1 4 4v6.17a3.001 3.001 0 1 1-2 0V9a2 2 0 0 0-2-2h-1.086l.293.293a1 1 0 0 1-1.414 1.414l-2-2a1 1 0 0 1 0-1.414l2-2a1 1 0 0 1 1.414 0Z" clip-rule="evenodd"/>
+              </svg>
+              </button>
+            <button><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+              </svg>
+              </button>
+            <button><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 1 0 0 4h16a2 2 0 1 0 0-4H4Zm0 6h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8Zm10.707 5.707a1 1 0 0 0-1.414-1.414l-.293.293V12a1 1 0 1 0-2 0v2.586l-.293-.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l2-2Z" clip-rule="evenodd"/>
+              </svg>
+              </button>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+    <div class="left-bar">
+      <h3>Top repository</h3>
+      <input type="text" placeholder="Find a repository...">
+      <ul>
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+        <li>Project 4</li>
+        <li>Project 5</li>
+        <li>Project 6</li>
+        <li>Project 7</li>
+        <li>Project 8</li>
+      </ul>
+    </div>
+    <div class="main">
+      <h3>Home</h3>
+      <input type="text" placeholder="Ask Copilot">
+      <br>
+      <button> <> compare java pass by value/ref</button>
+      <button> <> java null handling patterns</button>
+      <br><br>
+      Learn with tutorial project 
+      <br>
+      <div class="first-boxes">
+        <div class="block1"><strong style="color: rgb(96, 187, 223);"><b><a href="github.html">Introduction to GitHub</a></b></strong>
+          <br>
+          Get started using github in less than hour
+        </div>
+        <div class="block1"><strong style="color: rgb(96, 187, 223);"><b><a href="github.html">GitHub pages</a></b></strong>
+          <br>
+          Create a website or blog from your GitHub repositories with gitHub pages.
+        </div>
+      </div>
+      <div class="second-boxes">
+        <div class="block2"> <strong style="color: rgb(96, 187, 223);"><b><a href="github.html">Code with Copilot</a></b></strong>
+          <br> Develop with AI-powered code. <br> suggestions using GitHub copilot, codespaces, and VS code.
+        </div>
+        <div class="block2"><strong style="color: rgb(96, 187, 223);"><b><a href="github.html">Hello GitHub actions</a></b></strong>
+          <br> Create a GitHub action and use it in a workflow.
+         </div>
+      </div>
+    </div>
+    <div class="right-bar">
+      <div ><b>Latest changes</b> <br><br> 4 days ago <br> User prompt improvement is now in public preview within the GitHub mod... 
+      <br><br>
+      4 days ago <br>
+      CodeQL improves JavaScript and Ruby analysis in version 2.21.1
+      <br><br>
+      5 days ago <br>
+      Users can now choose whether merging linked pull requests automatically close... 
+      <br><br>
+      5 days ago <br>
+      GitHub Copilot code review now supports c, c++, and swift <br><br>
+      View changelog... 
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

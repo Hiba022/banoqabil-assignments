@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style> 
+        .contanier{
+            display: grid;
+            grid-template-columns: repeat(6,100px);
+            grid-template-rows: repeat(4, 100px);
+            background-color: black;
+            height: 100vh;
+            gap: 15px;
+            padding: 50px;
+            justify-content: center;
+        }
+        .item{
+            background-color: rgb(146, 243, 211);
+            border-radius: 15px;
+            padding: 5px;
+        }
+        #box3{
+            grid-column: span 2;
+        }
+        #box4{
+            grid-column: span 2;
+        }
+        #box5{grid-column: span 2;
+        }
+        #box6{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        #box7{
+            grid-row: span 2;
+        }
+        #box8{
+            grid-row: span 2;
+        }
+        #box9{
+            grid-column: span 2;
+        }
+        #box10{
+            grid-column: span 2;
+        }
+        #box11{
+            grid-column: span 3;
+        }
+        #box12{
+            grid-column: span 1;
+        }
+        .heading{
+            color: blanchedalmond;
+            font-style: italic;
+            font-size: 30px;
+            margin: 0%;
+            padding: 0%;
+            background-color: black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 class="heading">BENTO GRID</h3>
+    <div class="contanier" >  
+        <div class="item" id="box1">1</div>
+        <div class="item" id="box2">2</div>
+        <div class="item" id="box3">3</div>
+        <div class="item" id="box4">4</div>
+        <div class="item" id="box5">5</div>
+        <div class="item" id="box6">6</div>
+        <div class="item" id="box7">7</div>
+        <div class="item" id="box8">8</div>
+        <div class="item" id="box9">9</div>
+        <div class="item" id="box10">10</div>
+        <div class="item" id="box11">11</div>
+        <div class="item" id="box12">12</div>
+    
+    </div>
+</body>
+</html>

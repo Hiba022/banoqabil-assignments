@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login form</h3>
+    <form id="Loginform">
+    <label>Email:</label> <br><input type="Email" id="Email" >
+    <br><br>
+    <label>Password:</label><br> <input type="password" id="password" >
+    <br><br>
+    <button type="submit">Login</button>
+
+</form>
+</body>
+</html>
+<script src="localstorage.js"></script>
+<script>
+    window.onload = function(){
+        const user = getuserdata();
+        console.log("loaded user:", user);
+        document.getElementById("Email").value = user.Email;
+        document.getElementById("password").value = user.password
+        
+    }
+</script>

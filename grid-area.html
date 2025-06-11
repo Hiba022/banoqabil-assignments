@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(4, 100px);
+        background-color: black;
+        height: 100vh;
+        gap: 15px;
+        padding: 50px;
+        justify-content: center;
+
+       
+        grid-template-areas:
+            "box1  box2  box3  box3  box4  box4"
+            "box5  box5  box6  box6  box7  box8"
+            "box9  box9  box6  box6  box7  box8"
+            "box10 box10 box11 box11 box11 box12";
+    }
+
+    .item {
+        background-color: rgb(146, 243, 211);
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    #box1 { grid-area: box1; }
+    #box2 { grid-area: box2; }
+    #box3 { grid-area: box3; }
+    #box4 { grid-area: box4; }
+    #box5 { grid-area: box5; }
+    #box6 { grid-area: box6; }
+    #box7 { grid-area: box7; }
+    #box8 { grid-area: box8; }
+    #box9 { grid-area: box9; }
+    #box10 { grid-area: box10; }
+    #box11 { grid-area: box11; }
+    #box12 { grid-area: box12; }
+
+    .heading {
+        color: blanchedalmond;
+        font-style: italic;
+        font-size: 30px;
+        margin: 0%;
+        padding: 0%;
+        background-color: black;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h3 class="heading">BENTO GRID</h3>
+    <div class="container">  
+        <div class="item" id="box1">1</div>
+        <div class="item" id="box2">2</div>
+        <div class="item" id="box3">3</div>
+        <div class="item" id="box4">4</div>
+        <div class="item" id="box5">5</div>
+        <div class="item" id="box6">6</div>
+        <div class="item" id="box7">7</div>
+        <div class="item" id="box8">8</div>
+        <div class="item" id="box9">9</div>
+        <div class="item" id="box10">10</div>
+        <div class="item" id="box11">11</div>
+        <div class="item" id="box12">12</div>
+    </div>
+</body>
+
+</body>
+</html>
